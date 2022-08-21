@@ -1,0 +1,10 @@
+/* Header Section */
+.top-header {
+    background-color: #52ab98;
+    min-height: 350px;
+    height: 80vh;
+}
+
+.header-heading {
+    font-size: 4rem;
+}
