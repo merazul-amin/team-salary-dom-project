@@ -1,6 +1,6 @@
 /* Header Section */
 .top-header {
-    background-color: #52ab98;
+    background-color: #39395f;
     min-height: 350px;
     height: 80vh;
 }
@@ -8,3 +8,13 @@
 .header-heading {
     font-size: 4rem;
 }
+
+/* Five Players Part */
+.five-players {
+    background-color: #39395f;
+    color: white;
+    padding: 2em;
+}
+
+/* Calculaion Section */
+.calculation-section {}

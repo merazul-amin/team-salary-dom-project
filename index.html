@@ -14,7 +14,7 @@
     <!-- Starting of Header Section -->
     <header>
         <section class="container top-header d-flex align-items-center">
-            <div class="text-center container">
+            <div class="text-center container text-white">
                 <h1 class="header-heading">Your Favourite Five Players</h1>
                 <p class="w-75 mx-auto  fw-bold">You are very very welcome in this favourite player selection
                     website.
@@ -117,8 +117,33 @@
                     </div>
                 </div>
                 <!-- Calculation Section -->
-                <div class="col-4">
-                    <div class="p-3 border bg-light">Custom column padding</div>
+                <div class="col-4 border rounded">
+                    <div class="row g-2 p-2">
+                        <div class="col-12 d-flex flex-column align-items-center five-players rounded">
+                            <h2>Selected Five</h2>
+                            <ol class="fs-5">
+                                <li>Neymar</li>
+                                <li>Messi</li>
+                                <li>Mbappe</li>
+                                <li>Ramos</li>
+                            </ol>
+                        </div>
+                        <div
+                            class="col-12 d-flex flex-column align-items-center mt-3 border rounded calculation-section">
+                            <h2 class="mb-3">Budget</h2>
+                            <p><span>Per Player</span> <input type="text"></p>
+                            <button class="btn btn-success w-75">Calculate</button>
+
+                            <p class="fs-3 my-3"><span>Player Expenses $ </span> <span>00</span></p>
+
+                            <p><span>Manager</span> <input type="text"></p>
+                            <p><span>Coach</span> <input type="text"></p>
+
+                            <button class="btn btn-success w-75">Calculate Total</button>
+                            <p class="fs-2">Total $: <span>00</span></p>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
