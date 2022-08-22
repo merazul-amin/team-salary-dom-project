@@ -1,24 +1,6 @@
 function addToList(element) {
-    const nameText = element.parentNode.children[0].innerText
-    const orderedList = document.getElementById('selected-player-list')
-
-
-
-    const playerListLength = orderedList.children.length
-
-    if (playerListLength > 4) {
-        alert('You Can\'t choose more than 5 players.')
-
-    }
-    else {
-        const li = document.createElement('li')
-        li.innerText = nameText
-
-        orderedList.appendChild(li)
-    }
-
-
-
+    //This functon is declared in common.js file
+    selectPlayers(element)
 }
 
 

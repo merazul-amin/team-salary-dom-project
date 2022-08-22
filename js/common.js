@@ -1,3 +1,35 @@
+/*--------Players Selection Function----------------  */
+
+function selectPlayers(element) {
+    //This is for get the player name
+    const nameText = element.parentNode.children[0].innerText
+
+
+    // This is for get selected players list
+    const orderedList = document.getElementById('selected-player-list')
+
+
+
+    //This is for maximam player selection
+    const playerListLength = orderedList.children.length
+    if (playerListLength > 4) {
+        alert('You Can\'t choose more than 5 players.')
+
+    }
+    else {
+        const li = document.createElement('li')
+        li.innerText = nameText
+        orderedList.appendChild(li)
+        // //This is for Disable the button
+        const btnId = element
+        btnId.setAttribute("disabled", "true")
+    }
+}
+
+
+
+
+
 /*--------Players Salary Calculation Function----------------  */
 
 function playersSalary() {
