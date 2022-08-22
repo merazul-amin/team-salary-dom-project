@@ -1,12 +1,24 @@
 /* Header Section */
-.top-header {
-    background-color: #39395f;
-    min-height: 350px;
-    height: 80vh;
-}
 
 .header-heading {
     font-size: 4rem;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
 
 /* Five Players Part */
