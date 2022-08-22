@@ -119,7 +119,8 @@
                 <!-- Calculation Section -->
                 <div class="col-4 border rounded">
                     <div class="row g-2 p-2">
-                        <div class="col-12 d-flex flex-column align-items-center five-players rounded">
+                        <div
+                            class="col-12 d-flex flex-column align-items-center five-players rounded selected-playes-section">
                             <h2>Selected Five</h2>
                             <ol id="selected-player-list" class="fs-5">
                                 <!-- <li>Neymar</li>
@@ -131,10 +132,11 @@
                         <div
                             class="col-12 d-flex flex-column align-items-center mt-3 border rounded calculation-section">
                             <h2 class="mb-3">Budget</h2>
-                            <p><span>Per Player</span> <input type="text"></p>
-                            <button class="btn btn-success w-75">Calculate</button>
+                            <p><span>Per Player</span> <input id="perPlayerField" type="text"></p>
+                            <button id="player-salary-calculation" class="btn btn-success w-75">Calculate</button>
 
-                            <p class="fs-3 my-3"><span>Player Expenses $ </span> <span>00</span></p>
+                            <p class="fs-3 my-3"><span>Player Expenses $ </span> <span id="players-expenses">00</span>
+                            </p>
 
                             <p><span>Manager</span> <input type="text"></p>
                             <p><span>Coach</span> <input type="text"></p>
