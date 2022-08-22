@@ -21,29 +21,23 @@ function addToList(element) {
 
 }
 
-//Event Handler for players salary
+
+
+
+//----------Event Listener for players salary
 
 document.getElementById('player-salary-calculation').addEventListener('click', function () {
-    //Get the selected players Number
-    const selectedPlayers = document.getElementById('selected-player-list').children
 
-    //Get the per players cost field value
-    const perplayerField = document.getElementById('perPlayerField').value
-
-    if (isNaN(perplayerField) === true) {
-        alert('Only numbers are accepted.')
-    }
-    else if (perplayerField === '') {
-        alert('You can\'t leave the field empty.')
-    }
-    else {
-        //Calculate the cost
-        const playersCost = perplayerField * selectedPlayers.length
-
-        //Now set it to total players cost
-        const setPlayersCost = document.getElementById('players-expenses')
-        setPlayersCost.innerText = playersCost
-    }
+    //This functon is declared in common.js file
+    playersSalary()
+})
 
 
+
+//----------Event Listener for Total Cost Calculation and set it to total cost 
+
+document.getElementById('total-cost').addEventListener('click', function () {
+
+    //This functon is declared in common.js file
+    totalCostCalculation()
 })
