@@ -2,7 +2,7 @@
 
 function selectPlayers(element) {
     //This is for get the player name
-    const nameText = element.parentNode.children[0].innerText
+    const nameText = element.parentNode.children[0].innerText;
 
 
     // This is for get selected players list

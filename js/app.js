@@ -1,4 +1,5 @@
 function addToList(element) {
+    console.log(element);
     //This functon is declared in common.js file
     selectPlayers(element)
 }
